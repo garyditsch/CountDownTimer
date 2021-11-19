@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    background-color: #191A23;
+    background-image: url(./images/bg-stars.svg);
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.header-title {
+    width: 440px;
+    height: 29;
+    color: white;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 22px;
+    display: grid;
+    justify-content: center;
+    letter-spacing: 7.5px;
+    margin-top: 135px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    color: white;
+    margin-top: 268px;
+    width: 688px;
+    height: 184px;
+    border: 1px solid white;
+}
