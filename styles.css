@@ -2,9 +2,11 @@ body {
     margin: 0px;
     background-color: #191A23;
     background-image: url(./images/bg-stars.svg);
+    font-family: 'Red Hat Text', sans-serif;
 }
 
 header {
+    height: 20vh;
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
@@ -23,11 +25,61 @@ header {
 }
 
 main {
+    height: 60vh;
     display: grid;
     grid-template-columns: auto;
+    justify-content: center;
     color: white;
-    margin-top: 268px;
+    /* border: 1px solid white; */
+}
+
+.timer-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    /* border: 1px white solid; */
     width: 688px;
+    margin-top: 100px;
+}
+
+.days-box {
+    width: 148px;
     height: 184px;
-    border: 1px solid white;
+}
+
+.timer-box {
+    background-color: #191A23;
+    height: 150px;
+    width: 148px;
+}
+
+.timer-display {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    width: 148px;
+    height: 140px;
+    background-color: #343650;
+    border-radius: 10px;
+}
+
+.timer-number {
+    font-size: 80px;
+    color: #FB5E84
+}
+
+.timer-label {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: #8385A9;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-image: url(./images/pattern-hills.svg);
 }
