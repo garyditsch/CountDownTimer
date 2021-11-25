@@ -13,15 +13,12 @@ header {
 }
 
 .header-title {
-    width: 440px;
-    height: 29;
     color: white;
-    font-family: 'Red Hat Text', sans-serif;
     font-size: 22px;
     display: grid;
     justify-content: center;
     letter-spacing: 7.5px;
-    margin-top: 135px;
+    margin-top: 15vh;
 }
 
 main {
@@ -154,4 +151,106 @@ footer {
     width: 100%;
     height: 20vh;
     background-image: url(./images/pattern-hills.svg);
+}
+
+@media (max-width: 475px) {
+
+    .header-title {
+        font-size: 18px;
+        letter-spacing: 6.14px;
+    }
+
+    .timer-container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+        /* border: 1px white solid; */
+        width: 327px;
+        margin-top: 50px;
+        height: 125px;
+    }
+
+    progress {
+        /* RESETS */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+    
+        width: 100%;
+        height: 7px;
+        border-radius: 5px;
+        background-color: #343650;
+        color: rgb(7, 10, 10);
+    }
+    
+    .days-box {
+        width: 70px;
+        height: 97px;
+    }     
+
+    .timer-box {
+        position: relative;
+        background-color: #191a23;
+        border-radius: 10px;
+        height: 71px;
+        width: 70px;
+    }
+
+    .timer-box::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        bottom: 35px;
+        width: 100%;
+        background-color: #191A23;
+    }
+
+    .timer-display {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 71px;
+        background-color: #343650;
+        border-radius: 10px;
+    }
+
+    .timer-display::before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        left: -3px;
+        height: 6px;
+        width: 6px;
+        background-color: #191A23;
+    }
+
+    .timer-display::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        right: -3px;
+        height: 6px;
+        width: 6px;
+        background-color: #191a23;
+    }
+
+    .timer-number {
+        font-size: 36px;
+        color: #FB5E84
+    }
+
+    .timer-label {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        font-size: 7px;
+        letter-spacing: 2.97px;
+        margin-top: 5px;
+        color: #8385A9;
+    }
+    
 }

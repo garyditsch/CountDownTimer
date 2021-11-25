@@ -41,3 +41,6 @@ const setTimerNumber = (getCountDownTime, deadline) => {
 }
 
 let resetTimer = setInterval(setTimerNumber, 1000, getCountDownTime, deadline);
+
+// let width = window.innerWidth;
+// console.log(width)
