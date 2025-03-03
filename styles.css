@@ -22,13 +22,13 @@ header {
     font-size: 22px;
     display: grid;
     justify-content: center;
-    letter-spacing: 7.5px;
-    margin-top: 15vh;
+    /* letter-spacing: 7.5px; */
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .sub-title {
-    color: white;
+    color: #FB5E84;
     display: grid;
     justify-content: center;
 }
@@ -77,6 +77,8 @@ progress::-moz-progress-bar {
 .second-progress {
     display: grid;
     grid-column: span 4;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .timer-container {
@@ -85,7 +87,7 @@ progress::-moz-progress-bar {
     justify-content: space-between;
     /* border: 1px white solid; */
     width: 688px;
-    margin-top: 100px;
+    margin-top: 1rem;
     height: 250px;
 }
 
