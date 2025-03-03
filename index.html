@@ -29,56 +29,75 @@
 </head>
 <body>
   <header>
+    <progress id="progress-bar" class="second-progress" value="25" max="60"></progress>
     <div class="header-content">
-      <div class="header-title">How much time do I have remaing to make my impact?</div>
-      <div class="sub-title">Gary Ditch's Countdown</div>
+      <div class="header-title">How much time has gone by and how much do we have left?</div>
     </div>
   </header>
   <main>
-    <section class="timer-container">
-      <progress id="progress-bar" class="second-progress" value="25" max="60"></progress>
-      <div class="days-box">
-        <div class="timer-box">
-          <div class="timer-display">
-            <span id="weeks-timer" class="timer-number">00</span>
+    <!-- Timer UI Template for Gary -->
+    <div class="timer" data-deadline="December 31 2060 23:59:59" data-mode="countdown">
+      <div class="sub-title">How much time does Gary have left?</div>
+      <section class="timer-container">
+        <div class="time-box">
+          <div class="timer-box">
+            <div class="timer-display"><span class="timer-number years">00</span></div>
           </div>
+          <div class="timer-label">YEARS</div>
         </div>
-        <div class="timer-label">YEARS</div>
-      </div>
-      <div class="days-box">
-        <div class="timer-box">
-          <div class="timer-display">
-            <span id="day-timer" class="timer-number">00</span>
+        <div class="time-box">
+          <div class="timer-box">
+            <div class="timer-display"><span class="timer-number weeks">00</span></div>
           </div>
+          <div class="timer-label">WEEKS</div>
         </div>
-        <div class="timer-label">WEEKS</div>
-      </div>
-      <div class="days-box">
-        <div class="timer-box">
-          <div class="timer-display">
-            <span id="hours-timer" class="timer-number">00</span>
+        <div class="time-box">
+          <div class="timer-box">
+            <div class="timer-display"><span class="timer-number days">00</span></div>
           </div>
+          <div class="timer-label">DAYS</div>
         </div>
-        <div class="timer-label">DAYS</div>
-      </div>
-      <div class="days-box">
-        <div class="timer-box">
-          <div class="timer-display">
-              <span id="minutes-timer" class="timer-number">00</span>
+        <div class="time-box">
+          <div class="timer-box">
+            <div class="timer-display"><span class="timer-number hours">00</span></div>
           </div>
+          <div class="timer-label">HOURS</div>
         </div>
-        <div class="timer-label">HOURS</div>
-      </div>
-      <!-- <div class="days-box">
-        <div class="timer-box">
-          <div class="timer-display">
-            <span id="seconds-timer" class="timer-number">41</span>
+      </section>
+    </div>
+  
+    <!-- Timer UI Template for Romy -->
+    <div class="timer" data-deadline="2025-02-26T21:00:00" data-mode="timer">
+      <div class="sub-title">How much time has Romy been around?</div>
+      <section class="timer-container">
+        <div class="time-box">
+          <div class="timer-box">
+            <div class="timer-display"><span class="timer-number years">00</span></div>
           </div>
+          <div class="timer-label">YEARS</div>
         </div>
-        <div class="timer-label">SECONDS</div>
-      </div> -->
-    </section>
+        <div class="time-box">
+          <div class="timer-box">
+            <div class="timer-display"><span class="timer-number weeks">00</span></div>
+          </div>
+          <div class="timer-label">WEEKS</div>
+        </div>
+        <div class="time-box">
+          <div class="timer-box">
+            <div class="timer-display"><span class="timer-number days">00</span></div>
+          </div>
+          <div class="timer-label">DAYS</div>
+        </div>
+        <div class="time-box">
+          <div class="timer-box">
+            <div class="timer-display"><span class="timer-number hours">00</span></div>
+          </div>
+          <div class="timer-label">HOURS</div>
+        </div>
+      </section>
+    </div>
   </main>
+  
   <footer>
   </footer>
   <script type="text/javascript" src="./script.js"></script>
